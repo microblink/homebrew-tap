@@ -1,6 +1,6 @@
 require "formula"
 
-class kirax-auth < Formula
+class KiraxAuth < Formula
   desc "CLI for getting kirax tokens"
   homepage "https://bitbucket.org/microblink/mlp-go-auth"
   on_linux do
