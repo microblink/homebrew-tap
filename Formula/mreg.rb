@@ -1,6 +1,6 @@
 require "formula"
 
-class MReg < Formula
+class Mreg < Formula
   desc "CLI for model registry"
   homepage "https://bitbucket.org/microblink/model-registry"
   on_linux do
