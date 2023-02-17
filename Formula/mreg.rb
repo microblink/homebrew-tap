@@ -5,19 +5,19 @@ class MReg < Formula
   homepage "https://bitbucket.org/microblink/model-registry"
   on_linux do
     on_arm do
-        url "https://build-artifacts.mle.microblink.com/mreg/v0.14.46/mreg-linux-arm64.gz"
+        url "https://build-artifacts.mle.microblink.com/mreg/v0.15.3/mreg-linux-arm64.gz"
     end
     on_intel do
-        url "https://build-artifacts.mle.microblink.com/mreg/v0.14.46/mreg-linux-amd64.gz"
+        url "https://build-artifacts.mle.microblink.com/mreg/v0.15.3/mreg-linux-amd64.gz"
     end
   end
 
   on_macos do
     on_arm do
-        url "https://build-artifacts.mle.microblink.com/mreg/v0.14.46/mreg-darwin-arm64.gz"
+        url "https://build-artifacts.mle.microblink.com/mreg/v0.15.3/mreg-darwin-arm64.gz"
     end
     on_intel do
-        url "https://build-artifacts.mle.microblink.com/mreg/v0.14.46/mreg-darwin-amd64.gz"
+        url "https://build-artifacts.mle.microblink.com/mreg/v0.15.3/mreg-darwin-amd64.gz"
     end
   end
 
@@ -41,7 +41,7 @@ class MReg < Formula
 
   # Homebrew requires tests.
   test do
-    assert_match "0.14.46", shell_output("#{bin}/mreg -v", 2)
+    assert_match "v0.15.3", shell_output("#{bin}/mreg -v", 2)
   end
 
 end
