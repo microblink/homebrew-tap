@@ -5,19 +5,19 @@ class Mproxy < Formula
   homepage "https://bitbucket.org/microblink/mlp-model-proxy"
   on_linux do
     on_arm do
-        url "https://build-artifacts.mle.microblink.com/mlp-model-proxy/v0.15.0-rc4/proxy-linux-arm64.gz"
+        url "https://build-artifacts.mle.microblink.com/mlp-model-proxy/v0.15.0/proxy-linux-arm64.gz"
     end
     on_intel do
-        url "https://build-artifacts.mle.microblink.com/mlp-model-proxy/v0.15.0-rc4/proxy-linux-amd64.gz"
+        url "https://build-artifacts.mle.microblink.com/mlp-model-proxy/v0.15.0/proxy-linux-amd64.gz"
     end
   end
 
   on_macos do
     on_arm do
-        url "https://build-artifacts.mle.microblink.com/mlp-model-proxy/v0.15.0-rc4/proxy-darwin-arm64.gz"
+        url "https://build-artifacts.mle.microblink.com/mlp-model-proxy/v0.15.0/proxy-darwin-arm64.gz"
     end
     on_intel do
-        url "https://build-artifacts.mle.microblink.com/mlp-model-proxy/v0.15.0-rc4/proxy-darwin-amd64.gz"
+        url "https://build-artifacts.mle.microblink.com/mlp-model-proxy/v0.15.0/proxy-darwin-amd64.gz"
     end
   end
 
@@ -41,7 +41,7 @@ class Mproxy < Formula
 
   # Homebrew requires tests.
   test do
-    assert_match "v0.15.0-rc4", shell_output("#{bin}/mproxy -v", 2)
+    assert_match "v0.15.0", shell_output("#{bin}/mproxy -v", 2)
   end
 
 end
