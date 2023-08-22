@@ -5,19 +5,19 @@ class Kirax < Formula
   homepage "https://bitbucket.org/microblink/kirax-controller"
   on_linux do
     on_arm do
-        url "https://build-artifacts.mle.microblink.com/kirax/v0.52.1/kirax-linux-arm64.gz"
+        url "https://build-artifacts.mle.microblink.com/kirax/v0.52.5/kirax-linux-arm64.gz"
     end
     on_intel do
-        url "https://build-artifacts.mle.microblink.com/kirax/v0.52.1/kirax-linux-amd64.gz"
+        url "https://build-artifacts.mle.microblink.com/kirax/v0.52.5/kirax-linux-amd64.gz"
     end
   end
 
   on_macos do
     on_arm do
-        url "https://build-artifacts.mle.microblink.com/kirax/v0.52.1/kirax-darwin-arm64.gz"
+        url "https://build-artifacts.mle.microblink.com/kirax/v0.52.5/kirax-darwin-arm64.gz"
     end
     on_intel do
-        url "https://build-artifacts.mle.microblink.com/kirax/v0.52.1/kirax-darwin-amd64.gz"
+        url "https://build-artifacts.mle.microblink.com/kirax/v0.52.5/kirax-darwin-amd64.gz"
     end
   end
 
@@ -41,7 +41,7 @@ class Kirax < Formula
 
   # Homebrew requires tests.
   test do
-    assert_match "v0.52.1", shell_output("#{bin}/kirax -v", 2)
+    assert_match "v0.52.5", shell_output("#{bin}/kirax -v", 2)
   end
 
 end
